@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="travelcss/travel.css">
+    <link rel="shortcut icon" href="holiday_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Holiday</title>
+</head>
+
+<body>
+    <div class="holiday_form" id="signupForm">
+        <form class="holiday_form_box">
+            <button class="close_form" id="closeForm">&times;</button>
+
+            <div class="holiday_form_box_input">
+                <label>Username</label>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="holiday_form_box_input">
+                <label>Password</label>
+                <input type="text" placeholder="enter your Password">
+            </div>
+            <div class="age_genderbox">
+                <div class="holiday_form_box_input">
+                    <label>Age</label>
+                    <input type="number" placeholder="enter your age">
+                </div>
+                <div class="holiday_form_box_input">
+                    <label>Gender</label>
+                    <select class="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="holiday_form_box_input">
+                <label>Why choose our agency?</label>
+                <textarea></textarea>
+            </div>
+            <div class="submit_box">
+                <button type="submit" class="submit_btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="holiday_favicon.png" alt=""></a>
+
+            <div class="navbar">
+                <ul class="nav_box">
+                    <a href="index.html" class="active">
+                        <i class="fa-solid fa-house"></i>
+                        <li>Home</li>
+                    </a>
+                    <a href="destination.html">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <li>Destination</li>
+                    </a>
+                    <a href="contact.html">
+                        <i class="fa-regular fa-address-card"></i>
+                        <li>Contact</li>
+                    </a>
+                    <button class="signupBtn" id="signupBtn">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <p>Sign Up</p>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section_a">
+            <div class="available">
+                <div class="available_1" data-aos="flip-up">
+                    <h3>HOLIDAY TRAVEL AGENCY</h3>
+                </div>
+                <div class="available_2">
+                    <a href="Package_tours.html">
+                        <div class="available_cards">
+                            <i class="fa-brands fa-usps"></i>
+                            <h3>PACKAGE TOURS</h3>
+                        </div>
+                    </a>
+                    <a href="transportation.html">
+                        <div class="available_cards">
+                            <i class="fa-solid fa-car"></i>
+                            <h3>TRANSPOR<br>TATION</h3>
+                        </div>
+                    </a>
+                    <a href="flight_ticket.html">
+                        <div class="available_cards">
+                            <i class="fa-brands fa-avianex"></i>
+                            <h3>FLIGHT TICKETS</h3>
+                        </div>
+                    </a>
+                    <a href="bus_ticket.html">
+                        <div class="available_cards">
+                            <i class="fa-solid fa-bus"></i>
+                            <h3>BUS<br>TICKETS</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="section_b">
+            <div class="places">
+                <div class="find_up">
+                    <h2>“Find your happiness.” 🌸</h2>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../index slide/bagansunset.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../index slide/Ngapali.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../index slide/taunggyi.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../index slide/pyinooLwin.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../index slide/chaungtharr.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../index slide/shawdagon.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="find_down">
+                    <h2>“Find your freedom.” ✨</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_c">
+            <div class="secure_airway">
+                <i class="fa-solid fa-plane-departure"></i>
+                <h2>--Secure Airways--</h2>
+            </div>
+            <div class="airway_div">
+                <div class="airway_box" data-aos="fade-right">
+                    <img src="Airways/MAI.jpg" alt="">
+
+                    <h3>MAI Airway</h3>
+                </div>
+                <div class="airway_box" data-aos="zoom-in">
+                    <img src="Airways/Quatar.jpg" alt="">
+
+                    <h3>QUATAR Airway</h3>
+                </div>
+                <div class="airway_box" data-aos="fade-left">
+                    <img src="Airways/mna.jpg" alt="">
+
+                    <h3>Myanmar National Airline</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_d">
+            <div class="section_d_box">
+                <div class="section_d_box_top">
+                    <h2>Countries You Can Visit ✈️</h2>
+                </div>
+                <div class="section_d_box_bottom">
+                    <div class="section_d_box_bottom_cards" data-aos="fade-right">
+                        <img src="Myanmar/myanmar.png" alt="">
+                        <h3>Myanmar</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-up">
+                        <img src="Malaysia/malaysia.png" alt="">
+                        <h3>Malaysia</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-left">
+                        <img src="Cambodia/cambodia.png" alt="">
+                        <h3>Cambodia</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-right">
+                        <img src="Thailand/thailand.png" alt="">
+                        <h3>Thailand</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-up">
+                        <img src="Finland/finland.png" alt="">
+                        <h3>Finland</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-left">
+                        <img src="Singapore/singapore.png" alt="">
+                        <h3>Singapore</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-right">
+                        <img src="Spain/spain.png" alt="">
+                        <h3>Spain</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-up">
+                        <img src="Uae/uae.png" alt="">
+                        <h3>UAE</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-left">
+                        <img src="Usa/usa.png" alt="">
+                        <h3>USA</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-right">
+                        <img src="Germany/germany.png" alt="">
+                        <h3>Germany</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-up">
+                        <img src="Hongkong/hongkong.png" alt="">
+                        <h3>Hongkong</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-left">
+                        <img src="Japan/japan.jpg" alt="">
+                        <h3>Japan</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-right">
+                        <img src="Korea/korea.png" alt="">
+                        <h3>Korea</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-up">
+                        <img src="England/england.png" alt="">
+                        <h3>England</h3>
+                    </div>
+                    <div class="section_d_box_bottom_cards" data-aos="fade-left">
+                        <img src="France/france.png" alt="">
+                        <h3>France</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="service_box">
+                <div class="service_cards" data-aos="zoom-in">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h2>Life Insurance</h2>
+                    <p>Travel with peace of mind! Life insurance is provided for your safety during the trip,and if you
+                        suffer an accident of injury,your medical treatment expenses will be covered free of charge.</p>
+                </div>
+
+                <div class="service_cards" data-aos="zoom-in">
+                    <i class="fa-solid fa-coins"></i>
+                    <h2>Cost-effectiveness</h2>
+                    <p>Save your budget with Holiday Travel Agency, offering more affordable costs than other agencies
+                    </p>
+                </div>
+
+                <div class="service_cards" data-aos="zoom-in">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <h2>Time Savings</h2>
+                    <p>Our agency helps you start your journey within 10 days of submitting your application, saving you
+                        valuable waiting time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about_us">
+            <div class="about_agency">
+                <p>Established in 2015, Holiday Travel Agency has successfully arranged over 3,000 trips to date,
+                    delivering reliable and seamless travel experiences for our customers.
+
+                    With trusted travel arrangements, reliable guarantees, and fair pricing, we strive to be your
+                    preferred travel partner. Offering a wide range of destinations across more than 20 countries, we
+                    provide plenty of choices to suit every traveler’s needs.
+
+                    From exciting adventures to relaxing getaways, let Holiday Travel Agency make your next holiday a
+                    memorable one.
+                </p>
+            </div>
+
+            <div class="partner">
+                <div class="our_partner_left">
+                    <img src="Partner/mna.png" alt="">
+                    <img src="Partner/cola.png" alt="">
+                    <img src="Partner/quatar.png" alt="">
+                    <img src="Partner/mai.png" alt="">
+                </div>
+                <div class="our_partner_center">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Our Partner</h2>
+                    <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div class="our_partner_right">
+                    <img src="Partner/space x.png" alt="">
+                    <img src="Partner/meta.png" alt="">
+                    <img src="Partner/rolls royce.jpg" alt="">
+                    <img src="Partner/alpine.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr color="black">
+
+    <footer>
+        <p>&copy; Holiday Travel Agency Official Website.</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+    var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+
+<script>
+    const signupBtn = document.getElementById("signupBtn");
+    const signupForm = document.getElementById("signupForm");
+    const closeForm = document.getElementById("closeForm");
+
+
+    signupBtn.addEventListener("click", function () {
+        signupForm.style.display = "flex";
+    });
+
+
+    closeForm.addEventListener("click", function () {
+        signupForm.style.display = "none";
+    });
+</script>
+
+</html>

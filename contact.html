@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="travelcss/travel.css">
+    <link rel="shortcut icon" href="holiday_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>Holiday</title>
+</head>
+
+<body>
+    <div class="holiday_form" id="signupForm">
+        <div class="holiday_form_box">
+            <button class="close_form" id="closeForm">&times;</button>
+
+            <div class="holiday_form_box_input">
+                <label>Username</label>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="holiday_form_box_input">
+                <label>Password</label>
+                <input type="text" placeholder="enter your Password">
+            </div>
+            <div class="age_genderbox">
+                <div class="holiday_form_box_input">
+                    <label>Age</label>
+                    <input type="number" placeholder="enter your age">
+                </div>
+                <div class="holiday_form_box_input">
+                    <label>Gender</label>
+                    <select class="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="holiday_form_box_input">
+                <label>Why choose our agency?</label>
+                <textarea></textarea>
+            </div>
+            <div class="submit_box">
+                <button type="submit" class="submit_btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="holiday_favicon.png" alt=""></a>
+
+            <div class="navbar">
+                <ul class="nav_box">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <li>Home</li>
+                    </a>
+                    <a href="destination.html">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <li>Destination</li>
+                    </a>
+                    <a href="contact.html" class="active">
+                        <i class="fa-regular fa-address-card"></i>
+                        <li>Contact</li>
+                    </a>
+                    <button class="signupBtn" id="signupBtn">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <p>Sign Up</p>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="contact_header">
+                <h1>Contact Us Here!</h1>
+            </div>
+            <div class="contact_box">
+                <div class="contact_box_left">
+                    <div class="contact_box_left_cards">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>holiday09@gmail.com</p>
+                    </div>
+                    <div class="contact_box_left_cards">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>HolidayTA</p>
+                    </div>
+                    <div class="contact_box_left_cards">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>HolidayTA*</p>
+                    </div>
+                    <div class="contact_box_left_cards">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>09888777666</p>
+                    </div>
+                </div>
+                <div class="contact_box_right">
+                    <img src="HolidayHouse.png" alt="">
+                    <div class="contact_box_right_address">
+                        <div class="address_box">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h2>Address:</h2>
+                        </div>
+                        <p>Hlaing Township, Kan Street, No(11), Yangon, Myanmar</p>
+                    </div>
+                    <h3>Travel with us!</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="about_us">
+            <div class="about_agency">
+                <p>Established in 2015, Holiday Travel Agency has successfully arranged over 3,000 trips to date,
+                    delivering reliable and seamless travel experiences for our customers.
+
+                    With trusted travel arrangements, reliable guarantees, and fair pricing, we strive to be your
+                    preferred travel partner. Offering a wide range of destinations across more than 20 countries, we
+                    provide plenty of choices to suit every traveler’s needs.
+
+                    From exciting adventures to relaxing getaways, let Holiday Travel Agency make your next holiday a
+                    memorable one.
+                </p>
+            </div>
+
+            <div class="partner">
+                <div class="our_partner_left">
+                    <img src="Partner/mna.png" alt="">
+                    <img src="Partner/cola.png" alt="">
+                    <img src="Partner/quatar.png" alt="">
+                    <img src="Partner/mai.png" alt="">
+                </div>
+                <div class="our_partner_center">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Our Partner</h2>
+                    <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div class="our_partner_right">
+                    <img src="Partner/space x.png" alt="">
+                    <img src="Partner/meta.png" alt="">
+                    <img src="Partner/rolls royce.jpg" alt="">
+                    <img src="Partner/alpine.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script>
+    const signupBtn = document.getElementById("signupBtn");
+    const signupForm = document.getElementById("signupForm");
+    const closeForm = document.getElementById("closeForm");
+
+
+    signupBtn.addEventListener("click", function () {
+        signupForm.style.display = "flex";
+    });
+
+
+    closeForm.addEventListener("click", function () {
+        signupForm.style.display = "none";
+    });
+</script>
+
+</html>
