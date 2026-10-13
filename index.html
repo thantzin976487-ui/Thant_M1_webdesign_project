@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="travelcss/travel.css">
     <link rel="shortcut icon" href="holiday_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -310,45 +312,45 @@
     <footer>
         <p>&copy; Holiday Travel Agency Official Website.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+
+    <script>
+        const signupBtn = document.getElementById("signupBtn");
+        const signupForm = document.getElementById("signupForm");
+        const closeForm = document.getElementById("closeForm");
+
+
+        signupBtn.addEventListener("click", function () {
+            signupForm.style.display = "flex";
+        });
+
+
+        closeForm.addEventListener("click", function () {
+            signupForm.style.display = "none";
+        });
+    </script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-<script>
-    var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
-
-<script>
-    AOS.init({
-        duration: 1000,
-    });
-</script>
-
-<script>
-    const signupBtn = document.getElementById("signupBtn");
-    const signupForm = document.getElementById("signupForm");
-    const closeForm = document.getElementById("closeForm");
-
-
-    signupBtn.addEventListener("click", function () {
-        signupForm.style.display = "flex";
-    });
-
-
-    closeForm.addEventListener("click", function () {
-        signupForm.style.display = "none";
-    });
-</script>
 
 </html>

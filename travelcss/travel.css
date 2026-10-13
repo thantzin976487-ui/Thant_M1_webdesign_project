@@ -165,6 +165,7 @@ nav {
     transition: 0.3s;
     border: 2px solid var(--purple-color--);
     box-shadow: 0px 0px 4px var(--black-color--);
+    margin-top: 1.5rem;
 }
 
 .available_1 h3 {
